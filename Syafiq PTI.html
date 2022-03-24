@@ -1,0 +1,40 @@
+Script Program Batch Looping
+@echo off
+title modul 1 Sistem Operasi
+:awal
+echo ##########################################################################################
+echo              nn
+echo            nnnn                                                     
+echo           nnnnnn                                                    n
+echo                n                                                   nnn
+echo           n                                                        nnn
+echo           nn                                          nn  n         n         nnnn   
+echo          nnn           nn     nnn      nnnnnn        nn    nn                nnnnnn                          
+echo          nnnnnnn       nn     nnn     nn   nnnn      nn      n     nnn      nn    nn                 
+echo           nnnnnnnn     nn     nn     nnn   nnnn      nn      nn     nn      nn    nn               
+echo           nnnnnnnn     nn     nn     nnn   nnnn      nn             nn      nn    nn               
+echo             nnnnnn     nn     nn     nnn    nnn      nn             nn      nnn   nn            
+echo                nn      nnn    nn     nnn    nnn   nnnnnnnnnnn       nn      nnnn  nn            
+echo  nn            nn      nnnn   nn     nnnnn  nnn      nn             nn      nnnnn nn             
+echo   nnn          n          nn  nn     nnn    nnn      nn             nn           nnn           
+echo   nnnnnn      n              nnn                     nn             nn           nnn         
+echo    nnnnnn    n              nnn                      nn                          nnn              
+echo     nnnnnnnnn         n   nnnn                    n  n                            nn             
+echo       nnnnn          nn  nnn                       nn                              nnn           
+echo        nn             nnnn                             
+echo                                       KELAS B   NIM:2000016136         
+echo/
+echo ##########################################################################################          
+echo, 
+set B=  ______n______  _____nnn_____ ____nnnnn____  ___nnnnnnn___ __nnnnnnnnn__ _nnnnnnnnnnn_ nnnnnnnnnnnnn
+set/p "bil=Masukan Bilangan: "       
+FOR /L %%A IN (1,1,%bil%) DO (
+FOR %%b in (%B%) do (    
+
+    echo %%b
+  )
+)
+
+pause>nul
+cls
+goto awal  
